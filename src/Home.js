@@ -12,17 +12,17 @@ function Home() {
       src={background}/>
       <div className='home__row'>
         {/*Product*/}
-        <Product title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
-        <Product title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
+        <Product id='1234' title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
+        <Product id='1235' title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
       
       </div>
       <div className='home__row'>
         {/*Product*/}
-        <Product title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
+        <Product id='1236' title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
         
-        <Product title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
+        <Product id='1237' title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
         
-        <Product title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
+        <Product id='1238' title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
         
 
         
@@ -31,7 +31,7 @@ function Home() {
       </div>
       <div className='home__row'>
         {/*Product*/}
-        <Product title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
+        <Product id='1239' title="Titan Karishma Analog Champagne Dial Women's Watch" price={1994} image={product1} rating={5}/>
         
 
       </div>

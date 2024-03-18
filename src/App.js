@@ -6,7 +6,7 @@ import Header from './Header.js';
 import Home from './Home.js';
 import Checkout from './Checkout.js';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
+import Login from './Login.js'
 
 function App() {
   return (
@@ -15,10 +15,9 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-      <Route path='/checkout' element={<Checkout/>}>  </Route>
-      <Route path='/login' element={<Checkout />} >  </Route>
-      <Route path='/' element={(<Home/>)
-    }></Route>
+      <Route path='/Checkout' element={<Checkout/>}>  </Route>
+      <Route path='/login' element={<Login />} >  </Route>
+      <Route path='/' element={(<Home/>)}></Route>
      </Routes>
     </div>
   </Router>  
