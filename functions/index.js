@@ -9,11 +9,41 @@
 
 const {onRequest} = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
+const functions = require('firebase-functions');
+const express = require("express");
+const cors = require("cors");
+const { request } = require("express");
+const stripe = require("stripe")('sk_test_51P6927SHjgiUsfiRAR2Z8S67ybvtUbskyMhCk9T50zEDrSw0xGSAbBybKLI0r3DwsX3LY3aCbEdBMmQlcfxelmm200U0S6olkG')
 
-// Create and deploy your first functions
-// https://firebase.google.com/docs/functions/get-started
+// API
 
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+//App config
+const app = express();
+
+//- Middleware
+app.use(cors({ origin: true }));
+app.use(express.json());
+
+// API ROutes
+app.get('/', (request, response) => response.status(200).send('hello world'))
+
+app.post('/payments/create', async (request, response) => {
+    const total = request.query.total;
+
+    console.log('Payment request received',total)
+
+    const paymentIntent = await stripe.paymentIntents.create({
+        amount: total,
+        currency: "inr",
+    });
+
+    response.statusCode(201).send({
+        clientSecret: paymentIntent.client_secret,
+    })
+})
+
+//-Listen Command
+exports.api=functions.https.onRequest(app);
+
+// Example Endpoint
+//http://127.0.0.1:5001/e-commerce-website-c6f81/us-central1/api

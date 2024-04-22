@@ -1,0 +1,98 @@
+[debug] [2024-04-22T11:29:05.750Z] ----------------------------------------------------------------------
+[debug] [2024-04-22T11:29:05.943Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-22T11:29:05.944Z] CLI Version:   13.7.1
+[debug] [2024-04-22T11:29:05.945Z] Platform:      win32
+[debug] [2024-04-22T11:29:05.946Z] Node Version:  v20.11.0
+[debug] [2024-04-22T11:29:05.946Z] Time:          Mon Apr 22 2024 16:59:05 GMT+0530 (India Standard Time)
+[debug] [2024-04-22T11:29:05.947Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-22T11:29:06.000Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-04-22T11:29:06.346Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-22T11:29:06.347Z] > authorizing via signed-in user (pallavirthosar10@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2024-04-22T11:29:06.389Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-22T11:29:06.390Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-22T11:29:06.390Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-22T11:29:06.402Z] [hub] writing locator at C:\Users\HP\AppData\Local\Temp\hub-e-commerce-website-c6f81.json
+[debug] [2024-04-22T11:29:06.632Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-22T11:29:06.633Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-22T11:29:06.634Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2024-04-22T11:29:06.649Z] defaultcredentials: writing to file C:\Users\HP\AppData\Roaming\firebase\pallavirthosar10_gmail_com_application_default_credentials.json
+[debug] [2024-04-22T11:29:06.677Z] Setting GAC to C:\Users\HP\AppData\Roaming\firebase\pallavirthosar10_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HP\\AppData\\Roaming\\firebase\\pallavirthosar10_gmail_com_application_default_credentials.json"}}
+[debug] [2024-04-22T11:29:06.679Z] > refreshing access token with scopes: []
+[debug] [2024-04-22T11:29:06.681Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-22T11:29:06.681Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-22T11:29:07.175Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-04-22T11:29:07.176Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-04-22T11:29:08.108Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-22T11:29:08.108Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-22T11:29:08.372Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/adminSdkConfig [none]
+[debug] [2024-04-22T11:29:08.920Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/adminSdkConfig 200
+[debug] [2024-04-22T11:29:08.921Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/adminSdkConfig {"projectId":"e-commerce-website-c6f81","storageBucket":"e-commerce-website-c6f81.appspot.com"}
+[debug] [2024-04-22T11:29:09.133Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/sites 
+[debug] [2024-04-22T11:29:10.370Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/sites 200
+[debug] [2024-04-22T11:29:10.371Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/sites {"sites":[{"name":"projects/e-commerce-website-c6f81/sites/e-commerce-website-c6f81","defaultUrl":"https://e-commerce-website-c6f81.web.app","appId":"1:327041359920:web:300488b3d0aebf4ddb0df5","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-22T11:29:10.372Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/webApps/1:327041359920:web:300488b3d0aebf4ddb0df5/config [none]
+[debug] [2024-04-22T11:29:11.484Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/webApps/1:327041359920:web:300488b3d0aebf4ddb0df5/config 200
+[debug] [2024-04-22T11:29:11.485Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81/webApps/1:327041359920:web:300488b3d0aebf4ddb0df5/config {"projectId":"e-commerce-website-c6f81","appId":"1:327041359920:web:300488b3d0aebf4ddb0df5","storageBucket":"e-commerce-website-c6f81.appspot.com","apiKey":"AIzaSyBAYBmARg8CmevoEE3V4Ikermqo_wNNkUc","authDomain":"e-commerce-website-c6f81.firebaseapp.com","messagingSenderId":"327041359920","measurementId":"G-VMHEP6S52L"}
+[debug] [2024-04-22T11:29:11.575Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81 [none]
+[debug] [2024-04-22T11:29:11.994Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81 200
+[debug] [2024-04-22T11:29:11.994Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-website-c6f81 {"projectId":"e-commerce-website-c6f81","projectNumber":"327041359920","displayName":"e-commerce-website","name":"projects/e-commerce-website-c6f81","resources":{"hostingSite":"e-commerce-website-c6f81"},"state":"ACTIVE","etag":"1_d37c14f8-e40d-49bb-843f-5a4156edcdde"}
+[info] i  hosting[e-commerce-website-c6f81]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[e-commerce-website-c6f81]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-04-22T11:29:12.206Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-22T11:29:12.207Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-04-22T11:29:12.208Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\HP\\.cache\\firebase\\emulators\\ui-v1.11.8\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\HP\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.8\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-04-22T11:29:12.665Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-04-22T11:29:12.666Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "E:\Final_project\e-commerce-website\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\Final_project\\e-commerce-website\\functions\" for Cloud Functions..."}}
+[debug] [2024-04-22T11:29:12.777Z] Validating nodejs source
+[debug] [2024-04-22T11:29:22.828Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:85:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:301:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:330:34)
+    at async FunctionsEmulator.connect (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:267:13)
+    at async Object.startAll (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:569:13)
+[debug] [2024-04-22T11:29:22.831Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^15.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-22T11:29:22.832Z] Building nodejs source
+[debug] [2024-04-22T11:29:22.834Z] Failed to find version of module node: reached end of search path E:\Final_project\e-commerce-website\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-22T11:29:22.843Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-22T11:29:22.891Z] Found firebase-functions binary at 'E:\Final_project\e-commerce-website\functions\node_modules\.bin\firebase-functions'
