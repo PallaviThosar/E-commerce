@@ -8,8 +8,9 @@ import Checkout from './Checkout.js';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { auth } from "./firebase";
 import { useStateValue } from './StateProvider.js';
-import Login from './Login.js'
-import Payment from './Payment.js'
+import Login from './Login.js';
+import Payment from './Payment.js';
+import Orders from './Orders.js';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
@@ -46,10 +47,12 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
+        
       <Route path='/payment' element={<Elements stripe={promise}> <Payment/> </Elements>}>  </Route> 
-      <Route path='/Checkout' element={<Checkout/>}>  </Route>
+      <Route path='/orders' element={<Orders/> }>  </Route>
+      <Route path='/checkout' element={<Checkout/>}>  </Route>
+      <Route path='/' element={<Home/>}></Route>
       <Route path='/login' element={<Login />} >  </Route>
-      <Route path='/' element={(<Home/>)}></Route>
      </Routes>
     </div>
   </Router>  

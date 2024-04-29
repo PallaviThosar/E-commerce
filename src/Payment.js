@@ -26,13 +26,29 @@ function Payment() {
  useEffect(() =>{
   
   const getClientSecret = async () => {
-    const response = await axios({
-      method: 'post',
-      // Stripe expects the total in a currencies subunits
-      url: `/payments/create?total=${getBasketTotal(basket) * 100}`
-  });
-    setClientSecret(response.data.clientSecret)
-}
+    try {
+        const response = await axios.post('/payments/create', {
+            // Stripe expects the total in currency subunits
+            total: getBasketTotal(basket) * 100
+        });
+        setClientSecret(response.data.clientSecret);
+    } catch (error) {
+        // Handle errors
+        if (error.response) {
+            // Request was made and server responded with a status code outside 2xx range
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+        } else if (error.request) {
+            // Request was made but no response was received
+            console.log(error.request);
+        } else {
+            // Something happened in setting up the request that triggered an error
+            console.log('Error', error.message);
+        }
+    }
+};
+
     
    getClientSecret();
   }, [basket])
@@ -50,6 +66,10 @@ console.log('THE SECRET IS >>>>',clientSecret)
     setSucceeded(true);
     setError(null)
     setProcessing(false)
+
+    dispatch({
+      type: 'EMPTY_BASKET'
+  })
 
     navigate('/orders', { replace: true });
   })
